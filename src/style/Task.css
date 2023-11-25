@@ -1,0 +1,56 @@
+/* Tarea*/
+
+.task-container {
+  width: 500px;
+  height: 60px;
+  background-color: rgba(240, 184, 184, 0.3);
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;    
+}
+
+
+.taskText {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+  color: white;
+}
+
+
+.Icon {
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: rgba(163, 37, 121, 0.8);
+ 
+}
+
+/* Tarea Completada */
+
+.task-container.completed {
+  text-decoration: line-through double rgb(12, 12, 12);
+  background-color: rgba(163, 37, 121, 0.5);
+ 
+}
+/* Media query  */
+@media (max-width: 768px) {
+
+  .task-container {
+    width: 345px;
+    height: 50px;}
+
+  .Icon {
+    width: 30px;
+    height: 30px;
+}
+
+}
