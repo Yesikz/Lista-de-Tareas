@@ -42,7 +42,7 @@ function TaskForm(props) {
           onChange={handleChange}
         />
         <button className='buttont'>
-          Agregar Tarea
+          Crear Tarea
         </button>
       </form>
     </div>
