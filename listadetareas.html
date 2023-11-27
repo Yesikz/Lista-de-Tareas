@@ -18,7 +18,7 @@
     box-sizing: border-box;
   }
   body{
-  /*background-image: url('../assets/R.jpg'); */
+  /*background-image: url('../assets/R.jpg'); lo tengo con imagen de fondo en mi proyecto de react*/
   background-image: linear-gradient(to right bottom, rgb(129, 48, 106), rgb(165, 74, 184));
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -59,15 +59,6 @@
   color: white;
 }
 
-
-.Icon {
-  border-radius: 5px;
-  width: 40px;
-  height: 40px;
-  margin: 5px;
- 
-}
-
 /* Tarea Completada */
 
 .task-container.completed {
@@ -78,9 +69,8 @@
 
 /* TaskList */
 
-
 h2{
-  text-align: center;
+  text-align:center;
   color: white;
   margin-bottom: 18px;
   }
@@ -118,10 +108,8 @@ h2{
 
   }
 
-
-
   /* Media query  */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .taskinput {
     width: 200px;
     font-size: 18px;
@@ -136,7 +124,43 @@ h2{
     width: 345px;
     height: 50px;
   }
+  h2{
+  text-align:center;}
 }
+
+  /* Media query  */
+  @media (max-width: 564px) {
+
+    
+.taskinput {
+    width: 200px;
+    font-size: 18px;
+    border-radius: 6px 6px 6px 6px;
+  }
+  .buttont {
+    margin-left: 30px;
+    width: 140px;
+    height: 50px;
+    border-radius: 6px 6px 6px 6px;
+    font-size: 15px;
+
+  }
+  .task-container {
+    width: 200px;
+    height: 50px;
+
+  }
+
+  h2{
+    text-align:left;
+    margin: 20px;
+
+}
+.taskText {
+    font-size: 12px;
+  }}
+  
+  
 
     </style>
 
@@ -267,7 +291,7 @@ h2{
                       onChange={handleChange}
                   />
                   <button className='buttont'>
-                      Agregar Tarea
+                      Crear Tarea
                   </button>
               </form>
           </div>
