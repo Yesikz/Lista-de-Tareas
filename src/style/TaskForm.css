@@ -35,13 +35,30 @@
   /* Media query  */
 @media (max-width: 768px) {
   .taskinput {
-    width: 200px;
+    width: 180px;
     font-size: 18px;
   }
   .buttont {
-    width: 140px;
+    width: 120px;
     height: 50px;
     font-size: 16px;
+
+  }
+
+
+}
+@media (max-width: 500px) {
+  .taskinput {
+    width: 200px;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  .buttont {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    margin-left: 43px;
+    border-radius: 6px;
 
   }
 
